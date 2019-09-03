@@ -14,12 +14,11 @@ for (var i = 0; i < arr.length; i++) {
 //Additional
 
 function isItNumber (param) {
-	if(typeof param == 'number') {
+	if (typeof param == 'number') {
 		var d = new Date ();
 		alert(d.toLocaleString ());
 	} else {
 		alert("Неверный тип данных");
+		}
 	}
-}
-
 isItNumber(4)

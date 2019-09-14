@@ -1,0 +1,33 @@
+/////Required
+
+var obj = {
+	lipstick: 2,
+	eyeshadows: 'Dior',
+	napkins: 5, 
+	removeOption: function (prop) {
+		console.log(delete this[prop])
+	}
+}
+obj.removeOption('lipstick')
+
+var obj = {
+	lipstick: 2,
+	eyeshadows: 'Dior',
+	napkins: 5,
+	addOption:  function ( propName, propValue ) {
+		this [ propName ] = propValue
+	}
+}
+obj.addOption ( "candies", 40 )
+
+
+////Additional №2
+
+function Func () {}
+var obj_1 = new Func();
+Func.prototype.addProperty = function(name, value) {
+	this [ name ] = value
+}
+obj_1.addProperty("name", "Masha")
+var obj_2 = new Func();
+obj_2.addProperty("name", "Sasha")
